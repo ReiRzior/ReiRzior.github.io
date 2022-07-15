@@ -309,7 +309,11 @@ h6 a {
     color: inherit;
     text-decoration: none;
 }
-
+atitle
+{
+    font-size: 5.5em;
+    letter-spacing:6px;
+}
 h1 {
     font-size: 2.5em;
     line-height: 1.2;
