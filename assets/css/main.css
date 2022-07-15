@@ -11,6 +11,7 @@ span,
 applet,
 object,
 iframe,
+atitle,
 h1,
 h2,
 h3,
@@ -311,7 +312,7 @@ h6 a {
 }
 atitle
 {
-    font-size: 5.5em;
+    font-size: 3.5em;
     letter-spacing:6px;
 }
 h1 {
