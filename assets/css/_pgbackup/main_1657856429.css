@@ -3176,7 +3176,7 @@ table.alt tbody tr td {
     -ms-transition-delay: 0.5s;
     transition-delay: 0.5s;
     opacity: 1;
-    height: 150px;
+    height: 100px;
 }
 
 #header.alt .logo {
