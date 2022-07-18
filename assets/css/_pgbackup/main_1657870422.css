@@ -185,11 +185,11 @@ html {
 }
 
 body {
-    background-color: #7b2a70;
+    background-color: #935d8c;
     background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
     background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
     background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-    background-image: url("images/overlay.png"), linear-gradient(45deg, #920b79 15%, #4f3892 85%);
+    background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 }
 
 body.is-preload *,
@@ -310,41 +310,15 @@ h6 a {
     color: inherit;
     text-decoration: none;
 }
+atitle
+{
+    font-family:Brush Script MT,cursive;
+    font-weight: light;
+    font-size : 2.5em;
+    letter-spacing :20px ;
 
-atitle {
-    text-shadow: rgba(0, 0, 0, 0.325) 1px 1px,
-    rgba(0, 0, 0, 0.325) 2px 2px,
-    rgba(0, 0, 0, 0.325) 3px 3px,
-    rgba(0, 0, 0, 0.325) 4px 4px,
-    rgba(0, 0, 0, 0.451) 5px 5px,
-    rgba(0, 0, 0, 0.325) 6px 6px,
-    rgba(0, 0, 0, 0.325) 7px 7px,
-    rgba(0, 0, 0, 0.325) 8px 8px,
-    rgba(0, 0, 0, 0.325) 9px 9px,
-    rgba(0, 0, 0, 0.325) 10px 10px,
-    rgba(0, 0, 0, 0.325) 11px 11px,
-    rgba(0, 0, 0, 0.325) 12px 12px,
-    rgba(0, 0, 0, 0.325) 13px 13px,
-    rgba(0, 0, 0, 0.325) 14px 14px,
-    rgba(0, 0, 0, 0.325) 15px 15px,
-    rgba(0, 0, 0, 0.325) 16px 16px,
-    rgba(0, 0, 0, 0.325) 17px 17px,
-    rgba(0, 0, 0, 0.325) 18px 18px,
-    rgba(0, 0, 0, 0.325) 19px 19px,
-    rgba(0, 0, 0, 0.325) 20px 20px,
-    rgba(0, 0, 0, 0.325) 21px 21px,
-    rgba(0, 0, 0, 0.325) 22px 22px,
-    rgba(0, 0, 0, 0.325) 23px 23px,
-    rgba(0, 0, 0, 0.325) 24px 24px,
-    rgba(0, 0, 0, 0.325) 25px 25px,
-    rgba(0, 0, 0, 0.325) 26px 26px,
-    rgba(0, 0, 0, 0.325) 27px 27px,
-    rgba(0, 0, 0, 0.325) 28px 28px;
-    font-weight: lighter;
-    font-size: 2.5em;
-    letter-spacing: 20px ;
+   
 }
-
 h1 {
     font-size: 2.5em;
     line-height: 1.2;
