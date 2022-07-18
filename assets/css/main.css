@@ -274,7 +274,12 @@ em,
 i {
     font-style: italic;
 }
-
+colon
+{
+    text-align: left;
+    margin: 0 0 2em 0;
+    height: -23px;
+}
 p {
     text-align: left;
     margin: 0 0 2em 0;
