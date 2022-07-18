@@ -1,6 +1,9 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
-
+@font-face{
+    font-family:qingfeng;
+    src: url("/assets/webfonts/qingfeng.ttf");
+  }
 /* Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license) */
@@ -312,37 +315,31 @@ h6 a {
 }
 
 atitle {
-    text-shadow: rgba(0, 0, 0, 0.325) 1px 1px,
-    rgba(0, 0, 0, 0.325) 2px 2px,
-    rgba(0, 0, 0, 0.325) 3px 3px,
-    rgba(0, 0, 0, 0.325) 4px 4px,
-    rgba(0, 0, 0, 0.451) 5px 5px,
-    rgba(0, 0, 0, 0.325) 6px 6px,
-    rgba(0, 0, 0, 0.325) 7px 7px,
-    rgba(0, 0, 0, 0.325) 8px 8px,
-    rgba(0, 0, 0, 0.325) 9px 9px,
-    rgba(0, 0, 0, 0.325) 10px 10px,
-    rgba(0, 0, 0, 0.325) 11px 11px,
-    rgba(0, 0, 0, 0.325) 12px 12px,
-    rgba(0, 0, 0, 0.325) 13px 13px,
-    rgba(0, 0, 0, 0.325) 14px 14px,
-    rgba(0, 0, 0, 0.325) 15px 15px,
-    rgba(0, 0, 0, 0.325) 16px 16px,
-    rgba(0, 0, 0, 0.325) 17px 17px,
-    rgba(0, 0, 0, 0.325) 18px 18px,
-    rgba(0, 0, 0, 0.325) 19px 19px,
-    rgba(0, 0, 0, 0.325) 20px 20px,
-    rgba(0, 0, 0, 0.325) 21px 21px,
-    rgba(0, 0, 0, 0.325) 22px 22px,
-    rgba(0, 0, 0, 0.325) 23px 23px,
-    rgba(0, 0, 0, 0.325) 24px 24px,
-    rgba(0, 0, 0, 0.325) 25px 25px,
-    rgba(0, 0, 0, 0.325) 26px 26px,
-    rgba(0, 0, 0, 0.325) 27px 27px,
-    rgba(0, 0, 0, 0.325) 28px 28px;
+    display: block;
+    overflow: hidden;
+    text-shadow: rgb(32, 35, 94) 1px 1px,
+    rgb(32, 35, 94)  2px 2px,
+    rgb(32, 35, 94)  3px 3px,
+    rgb(32, 35, 94)  4px 4px,
+    rgb(32, 35, 94)  5px 5px,
+    rgb(32, 35, 94)  6px 6px,
+    rgb(32, 35, 94)  7px 7px,
+    rgb(32, 35, 94)  8px 8px,
+    rgb(32, 35, 94)  9px 9px,
+    rgb(32, 35, 94)  10px 10px,
+    rgb(32, 35, 94)  11px 11px,
+    rgb(32, 35, 94)  12px 12px,
+    rgb(32, 35, 94)  13px 13px,
+    rgb(32, 35, 94)  14px 14px,
+    rgb(32, 35, 94)  15px 15px,
+    rgb(32, 35, 94)  16px 16px;
     font-weight: lighter;
     font-size: 2.5em;
     letter-spacing: 20px ;
+}
+longer
+{
+    letter-spacing: 20px;
 }
 
 h1 {
