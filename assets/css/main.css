@@ -50,6 +50,7 @@ var,
 b,
 u,
 i,
+colon,
 center,
 dl,
 dt,
@@ -340,7 +341,7 @@ atitle {
     rgb(32, 35, 94)  15px 15px,
     rgb(32, 35, 94)  16px 16px;
     font-weight: lighter;
-    font-size: 62.5%;
+    font-size: 3em;
     letter-spacing: 20px ;
 }
 longer
@@ -355,7 +356,7 @@ h1 {
 }
 
 h2 {
-    text-align: left ;
+    
     font-size: 1.5em;
 }
 
