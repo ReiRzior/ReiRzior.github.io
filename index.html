@@ -8,6 +8,7 @@
     <head> 
         <title>曙星致意</title>         
         <meta charset="utf-8"/> 
+        <link rel="stylesheet" href="./style.css">
         <link rel="shortcut icon" href="images/logo.png" type="image/x-icon"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/> 
         <link rel="stylesheet" href="assets/css/main.css"/> 
@@ -25,7 +26,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap" rel="stylesheet"/>
         <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
     </head>     
-    <body class="is-preload"> 
+    <body> 
         <!-- Wrapper -->         
         <div id="wrapper"> 
             <!-- Header -->             
@@ -82,14 +83,18 @@
             <!-- First Section -->             
             <section id="first" class="main special"> 
                 <header class="major"> 
-                    <canvas id="canvas" width="700" height="650";></canvas>
+                    <!-- partial:index.partial.html -->
+                    <canvas id="canvas" width="1100" height="950"></canvas>
+                    <!-- partial -->
+                      <script  src="assets/js/wordcloudscript.js"></script>
+                    </header>
+                    
+                <header class="major"> 
+                    
                     <h2><font face="Noto Sans SC" color="black">实用工具下载</font></h2>
-                    <!--<colon><a href="url"><font face="Noto Sans SC" color="black">Adobe系列软件(Ps,Pr,Ae,Au)</font></a></colon><br/>
-                    <colon><a href="url">Winrar解压缩软件(打开，解压.zip .rar等格式压缩文件)</a></colon> <br/>
-                    <colon><a href="url">Office系列(Word,Powerpoint等)</a></colon> <br/>
-                    <colon><a href="url">图吧工具箱(DiskGenius,烤机、测温工具等)</a></colon> <br/>
-                    <colon><a href="url">Adobe系列软件(Ps,Pr,Ae,Au包括CC全系列)</a></colon>  <br/>-->                     
-                </header>                 
+                                         
+                </header>
+                                 
                 <ul class="features"> 
                     <li> 
                         <img src="images\adobeduck.png" width="370"/>

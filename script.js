@@ -1,25 +1,25 @@
-const data = ['赤羽','IA','五维介质','二胡','前端', 'After Effects', 'PhotoShop', 'FPS', 'English', 'PC硬件', 'Visual Studio Code', 'Python','Nonebot','Media Coder','Adobe','MySql','超频','Ubisoft'];
-const sphereRad = 500; // 词云半径
+const data = ['前端', '工程师', 'canvas', 'svg', 'js', 'vue', 1, 2, 3, 4, 5, 6];
+const sphereRad = 400; // 词云半径
 const sphereCenterX = 0; // 词云中心点x坐标
 const sphereCenterY = 0; // 词云中心点y坐标
 const sphereCenterZ = -3 - sphereRad; // 词云中心点z坐标
 const radiusSp = 1;
 const optDisplayDots = false; // 是否显示圆点
-const particleRad = 1; // 圆点半径
-const rgbString = 'rgba(72, 122, 180, ';
+const particleRad = 20; // 圆点半径
+const rgbString = 'rgba(70, 255, 140, ';
 
 let timer; // 计时器
-let count = 1; // 粒子总数
-const numToAddEachFrame = 1; // 每一帧添加数量
+let count = 0; // 粒子总数
+const numToAddEachFrame = 4; // 每一帧添加数量
 let particleList = {}; // 粒子列表
 let recycleBin = {}; // 回收粒子列表
-const zeroAlphaDepth = -1300; // rgba中a值为0时的深度
+const zeroAlphaDepth = -750; // rgba中a值为0时的深度
 const particleAlpha = 1; // 最大rgba中a值
-let fLen = 600; // 观察者到z = 0的距离
+let fLen = 320; // 观察者到z = 0的距离
 let zMax = fLen - 2;
 let m;
-let turnAngle = 90; // 旋转角度
-const turnSpeed = 2 * Math.PI / 9200; // 词云旋转速度（1600毫秒旋转一圈）
+let turnAngle = 0; // 旋转角度
+const turnSpeed = 2 * Math.PI / 1600; // 词云旋转速度（1600毫秒旋转一圈）
 	
 let randAccelX, randAccelY, randAccelZ;
 const gravity = 0; // -1 向上、0 四周、1向下
@@ -89,7 +89,7 @@ function wordCloud () {
 		cosAngle = Math.cos(turnAngle);
 
 		// 准备绘制
-		ctx.fillStyle = '#FFffff';
+		ctx.fillStyle = '#000';
 		ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
 		// 更新或向粒子列表中添加数据
@@ -155,7 +155,7 @@ function wordCloud () {
 				// 消失
 				depthAlphaFactor = (1 - rotZ / zeroAlphaDepth);
 				depthAlphaFactor = (depthAlphaFactor > 1) ? 1 : ((depthAlphaFactor < 0) ? 0 : depthAlphaFactor);
-        ctx.font = '20px 微软雅黑';
+        ctx.font = '14px 微软雅黑';
 				ctx.fillStyle = rgbString + depthAlphaFactor * particle.alpha + ')';
 				ctx.fillText(particle.flake,particle.projX, particle.projY);
 				ctx.beginPath();
