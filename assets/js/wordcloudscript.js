@@ -1,25 +1,25 @@
-const data = ['战双','业余摄影','赤羽','IA','五维介质','二胡','前端', 'After Effects', 'PhotoShop', 'FPS', 'English', 'PC硬件', 'Visual Studio Code', 'Python','Nonebot','Media Coder','Adobe','MySql','超频','Ubisoft'];
+const data = ['战双','业余摄影','赤羽','IA',' ',' ',' ','五维介质','前端','Pr','MAD', 'AE', 'PS', 'FPS', 'PC硬件', 'VSCode', 'Python','Nonebot','Adobe','MySql','超频','Ubisoft'];
 const sphereRad = 500; // 词云半径
 const sphereCenterX = 0; // 词云中心点x坐标
 const sphereCenterY = 0; // 词云中心点y坐标
-const sphereCenterZ = -3 - sphereRad; // 词云中心点z坐标
+const sphereCenterZ = 0 - sphereRad; // 词云中心点z坐标
 const radiusSp = 1;
 const optDisplayDots = false; // 是否显示圆点
 const particleRad = 1; // 圆点半径
 const rgbString = 'rgba(72, 122, 180, ';
 
 let timer; // 计时器
-let count = 1; // 粒子总数
-const numToAddEachFrame = 0.1; // 每一帧添加数量
+let count = 0; // 粒子总数
+const numToAddEachFrame = 1; // 每一帧添加数量
 let particleList = {}; // 粒子列表
 let recycleBin = {}; // 回收粒子列表
-const zeroAlphaDepth = -700; // rgba中a值为0时的深度
+const zeroAlphaDepth = -1000; // rgba中a值为0时的深度
 const particleAlpha = 0.9; // 最大rgba中a值
 let fLen = 600; // 观察者到z = 0的距离
 let zMax = fLen - 2;
 let m;
-let turnAngle = 90; // 旋转角度
-const turnSpeed = 2 * Math.PI / 9200; // 词云旋转速度（1600毫秒旋转一圈）
+let turnAngle = 0; // 旋转角度
+const turnSpeed = 2 * Math.PI / 2200; // 词云旋转速度（1600毫秒旋转一圈）
 	
 let randAccelX, randAccelY, randAccelZ;
 const gravity = 0; // -1 向上、0 四周、1向下
