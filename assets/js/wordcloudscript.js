@@ -1,4 +1,4 @@
-const data = ['赤羽','IA','五维介质','二胡','前端', 'After Effects', 'PhotoShop', 'FPS', 'English', 'PC硬件', 'Visual Studio Code', 'Python','Nonebot','Media Coder','Adobe','MySql','超频','Ubisoft'];
+const data = ['战双','业余摄影','赤羽','IA','五维介质','二胡','前端', 'After Effects', 'PhotoShop', 'FPS', 'English', 'PC硬件', 'Visual Studio Code', 'Python','Nonebot','Media Coder','Adobe','MySql','超频','Ubisoft'];
 const sphereRad = 500; // 词云半径
 const sphereCenterX = 0; // 词云中心点x坐标
 const sphereCenterY = 0; // 词云中心点y坐标
@@ -10,11 +10,11 @@ const rgbString = 'rgba(72, 122, 180, ';
 
 let timer; // 计时器
 let count = 1; // 粒子总数
-const numToAddEachFrame = 1; // 每一帧添加数量
+const numToAddEachFrame = 0.1; // 每一帧添加数量
 let particleList = {}; // 粒子列表
 let recycleBin = {}; // 回收粒子列表
-const zeroAlphaDepth = -1300; // rgba中a值为0时的深度
-const particleAlpha = 1; // 最大rgba中a值
+const zeroAlphaDepth = -700; // rgba中a值为0时的深度
+const particleAlpha = 0.9; // 最大rgba中a值
 let fLen = 600; // 观察者到z = 0的距离
 let zMax = fLen - 2;
 let m;
