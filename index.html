@@ -21,6 +21,15 @@ else{document.write(‘<meta name="viewport" content="width=640, target-densityd
 else { document.write(‘<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">‘); }
 
  </script>
+		<script type="text/javascript">
+
+   var html = document.querySelector(‘html‘);
+
+   var rem = html.offsetWidth / 6.4;
+
+   html.style.fontSize = rem + "px";
+</script>
+
         <script src="https://code.jquery.com/jquery-latest.js"></script>
         <script src='wordcloud.js'></script>
         </script>
