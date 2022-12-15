@@ -1,282 +1,300 @@
-<!DOCTYPE HTML> 
+<!DOCTYPE HTML>
 
-<html> 
-    <head> 
-        <title>曙星致意</title>         
-        <meta charset="utf-8"/> 
-		<script type="text/javascript">
+<html>
 
-var phoneWidth =  parseInt(window.screen.width);
+<head>
+    <title>曙星致意</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
 
-var phoneScale = phoneWidth/640;
+        var phoneWidth = parseInt(window.screen.width);
 
-var ua = navigator.userAgent;
+        var phoneScale = phoneWidth / 640;
 
-if (/Android (d+.d+)/.test(ua)){var version = parseFloat(RegExp.$1);
+        var ua = navigator.userAgent;
 
-if(version>2.3){ document.write(‘<meta name="viewport" content="width=640, minimum-scale = ‘+phoneScale+‘, maximum-scale = ‘+phoneScale+‘, target-densitydpi=device-dpi">‘); }
+        if (/Android (d+.d+)/.test(ua)) {
+            var version = parseFloat(RegExp.$1);
 
-else{document.write(‘<meta name="viewport" content="width=640, target-densitydpi=device-dpi">‘); }
+            if (version > 2.3) {
+                document.write(‘<meta name="viewport" content="width=640, minimum-scale = ‘+phoneScale+‘, maximum-scale = ‘+phoneScale+‘, target-densitydpi=device-dpi">‘); }
 
-else { document.write(‘<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">‘); }
+                    else{document.write(‘<meta name="viewport" content="width=640, target-densitydpi=device-dpi">‘); }
 
- </script>
-		<script type="text/javascript">
+                        else {document.write(‘<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">‘); }
 
-   var html = document.querySelector(‘html‘);
+    </script>
+    <script type="text/javascript">
 
-   var rem = html.offsetWidth / 6.4;
+                            var html = document.querySelector(‘html‘);
 
-   html.style.fontSize = rem + "px";
-</script>
+                            var rem = html.offsetWidth / 6.4;
 
-        <script src="https://code.jquery.com/jquery-latest.js"></script>
-        <script src='wordcloud.js'></script>
-        </script>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/> 
-        <link rel="stylesheet" href="assets/css/main.css"/> 
-        <noscript>
-            <link rel="stylesheet" href="assets/css/noscript.css"/>
-        </noscript>
-                 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Georgian&display=swap"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+Georgian&display=swap"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap" rel="stylesheet"/>
-        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-    </head>
-        
-    <body class="is-preload"> 
-        <!-- Wrapper -->         
-        <div id="wrapper"> 
-            <!-- Header -->             
-            <header id="header" class="alt"><span class="logo"><img src="images/logo.svg" alt=""/></span> 
-                <atitle>AvaBelleville</atitle>
-                <br/><br/><br/>
-				
-                <longer><font face="Noto serif SC" size="7" color="white">个人站点</font>
-                </longer>   
-            
-            <div id='holder'></div>
-        <script type="text/javascript">
+                            html.style.fontSize = rem + "px";
+    </script>
 
-            //--------------------------3D 词云图 -----------------
-            $( document ).ready( function() {
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src='wordcloud.js'></script>
+    </script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Georgian&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+Georgian&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap" rel="stylesheet" />
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" class="alt"><span class="logo"><img src="images/logo.svg" alt="" /></span>
+            <atitle>AvaBelleville</atitle>
+            <br /><br /><br />
+
+            <longer>
+                <font face="Noto serif SC" size="7" color="white">个人站点</font>
+            </longer>
+
+            <div id='holder'>
+                <script type="text/javascript">
+
+                            //--------------------------3D 词云图 -----------------
+                            $( document ).ready( function() {
     
-                var entries = [ 
-                    //这里的fontColor设置字体颜色,fontSize设置字体大小,还有fontFamily,fontWeight,fontStyle,fontStretch这几个属性,做什么就自己研究吧
-                    { label: '郁闷',fontColor:'red',fontSize:28, url:                     'http://niklasknaack.blogspot.de/', target: '_button' },
-                    { label: '慌张', url: 'http://www.flashforum.de/', target: '_top' },
-                    { label: '惊讶', url: 'http://www.jqueryscript.net/', target: '_top' },
-                    { label: '棒棒哒', url: 'http://forum.jswelt.de/', target: '_top' },
-                    { label: '很有趣', url: 'https://jsfiddle.net/user/NiklasKnaack/fiddles/', target: '_top' },
-                    { label: '还行', url: 'http://codepen.io/', target: '_top' },
-                    { label: '污染严重', url: 'http://threejs.org/', target: '_top' },
-                    { label: '有帮助', url: 'http://webglstudio.org/', target: '_top' },
-                    { label: '能走', url: 'http://jscompress.com/', target: '_top' },
-                    { label: '瓶颈', url: 'https://tinypng.com/', target: '_top' },
-                    { label: '哈哈', url: 'http://caniuse.com/', target: '_top' },
-                    { label: '呵呵', url: 'https://goo.gl/', target: '_top' },
-                    { label: '无敌', url: 'http://www.opinionatedgeek.com/DotNet/Tools/HTMLEncode/Encode.aspx', target: '_top' },
-                    { label: '寂寞', url: 'https://twitter.com/niklaswebdev', target: '_top' },
-                    { label: '杂七杂八', url: 'http://nkunited.deviantart.com/', target: '_top' },
-                    { label: '乱七八糟', url: 'http://gulpjs.com/', target: '_top' },
-                    { label: '么么哒', url: 'https://www.browsersync.io/', target: '_top' },
-                    { label: '去吧', url: 'https://github.com/', target: '_top' },
-                    { label: '来吧', url: 'https://www.shadertoy.com/', target: '_top' },
-                    { label: '走吧', url: 'http://gamua.com/starling/', target: '_top' },
-                    { label: '哈哈呵呵', url: 'http://jsperf.com/', target: '_top' },
-                    { label: '天天向上', url: 'http://foundation.zurb.com/', target: '_top' },
-                    { label: '好好学习', url: 'http://createjs.com/', target: '_top' },
-                    { label: '一天一个样', url: 'http://julian.com/research/velocity/', target: '_top' },
-                    { label: '三天打鱼两天晒网', url: 'https://greensock.com/docs/#/HTML5/GSAP/TweenLite/', target: '_top' },
-                    { label: '先知', url: 'https://jquery.com/', target: '_top' },
-                    { label: '恶魔', url: 'http://www.jqueryrain.com/', target: '_top' },
-                    { label: 'OK', url: 'http://jquery-plugins.net/', target: '_top' },
-    
-                ];
-    
-                var settings = {
-                    entries: entries,//数据
-                    width: 700,//宽度
-                    height: 700,//高度
-                    radius: '65%',
-                    radiusMin: 75,
-                    bgDraw: false,//是否显示背景
-                    bgColor: '#AFEEEE',//背景颜色
-                    opacityOver: 1.00,
-                    opacityOut: 0.05,
-                    opacitySpeed: 6,
-                    fov: 800,
-                    speed: 0.4,//旋转的速度
-                    fontFamily: 'Noto serif SC',
-                    fontSize: '18',//默认字体大小
-                    fontColor: '#ffffff',//默认字体颜色
-                    fontWeight: 'normal',//bold
-                    fontStyle: 'normal',//italic 
-                    fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-                    fontToUpperCase: true,
-                    tooltipFontFamily: 'Oswald, Arial, sans-serif',
-                    tooltipFontSize: '11',
-                    tooltipFontColor: 'red',
-                    tooltipFontWeight: 'normal',//bold
-                    tooltipFontStyle: 'normal',//italic 
-                    tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-                    tooltipFontToUpperCase: false,
-                    tooltipTextAnchor: 'left',
-                    tooltipDiffX: 0,
-                    tooltipDiffY: 10
+                var entries = [
+                            //这里的fontColor设置字体颜色,fontSize设置字体大小,还有fontFamily,fontWeight,fontStyle,fontStretch这几个属性,做什么就自己研究吧
+                            {label: '郁闷',fontColor:'red',fontSize:28, url:                     'http://niklasknaack.blogspot.de/', target: '_button' },
+                            {label: '慌张', url: 'http://www.flashforum.de/', target: '_top' },
+                            {label: '惊讶', url: 'http://www.jqueryscript.net/', target: '_top' },
+                            {label: '棒棒哒', url: 'http://forum.jswelt.de/', target: '_top' },
+                            {label: '很有趣', url: 'https://jsfiddle.net/user/NiklasKnaack/fiddles/', target: '_top' },
+                            {label: '还行', url: 'http://codepen.io/', target: '_top' },
+                            {label: '污染严重', url: 'http://threejs.org/', target: '_top' },
+                            {label: '有帮助', url: 'http://webglstudio.org/', target: '_top' },
+                            {label: '能走', url: 'http://jscompress.com/', target: '_top' },
+                            {label: '瓶颈', url: 'https://tinypng.com/', target: '_top' },
+                            {label: '哈哈', url: 'http://caniuse.com/', target: '_top' },
+                            {label: '呵呵', url: 'https://goo.gl/', target: '_top' },
+                            {label: '无敌', url: 'http://www.opinionatedgeek.com/DotNet/Tools/HTMLEncode/Encode.aspx', target: '_top' },
+                            {label: '寂寞', url: 'https://twitter.com/niklaswebdev', target: '_top' },
+                            {label: '杂七杂八', url: 'http://nkunited.deviantart.com/', target: '_top' },
+                            {label: '乱七八糟', url: 'http://gulpjs.com/', target: '_top' },
+                            {label: '么么哒', url: 'https://www.browsersync.io/', target: '_top' },
+                            {label: '去吧', url: 'https://github.com/', target: '_top' },
+                            {label: '来吧', url: 'https://www.shadertoy.com/', target: '_top' },
+                            {label: '走吧', url: 'http://gamua.com/starling/', target: '_top' },
+                            {label: '哈哈呵呵', url: 'http://jsperf.com/', target: '_top' },
+                            {label: '天天向上', url: 'http://foundation.zurb.com/', target: '_top' },
+                            {label: '好好学习', url: 'http://createjs.com/', target: '_top' },
+                            {label: '一天一个样', url: 'http://julian.com/research/velocity/', target: '_top' },
+                            {label: '三天打鱼两天晒网', url: 'https://greensock.com/docs/#/HTML5/GSAP/TweenLite/', target: '_top' },
+                            {label: '先知', url: 'https://jquery.com/', target: '_top' },
+                            {label: '恶魔', url: 'http://www.jqueryrain.com/', target: '_top' },
+                            {label: 'OK', url: 'http://jquery-plugins.net/', target: '_top' },
+
+                            ];
+
+                            var settings = {
+                                entries: entries,//数据
+                            width: 500,//宽度
+                            height: 700,//高度
+                            radius: '65%',
+                            radiusMin: 75,
+                            bgDraw: false,//是否显示背景
+                            bgColor: '#AFEEEE',//背景颜色
+                            opacityOver: 1.00,
+                            opacityOut: 0.05,
+                            opacitySpeed: 6,
+                            fov: 800,
+                            speed: 0.4,//旋转的速度
+                            fontFamily: 'Noto serif SC',
+                            fontSize: '18',//默认字体大小
+                            fontColor: '#ffffff',//默认字体颜色
+                            fontWeight: 'normal',//bold
+                            fontStyle: 'normal',//italic
+                            fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                            fontToUpperCase: true,
+                            tooltipFontFamily: 'Oswald, Arial, sans-serif',
+                            tooltipFontSize: '11',
+                            tooltipFontColor: 'red',
+                            tooltipFontWeight: 'normal',//bold
+                            tooltipFontStyle: 'normal',//italic
+                            tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                            tooltipFontToUpperCase: false,
+                            tooltipTextAnchor: 'left',
+                            tooltipDiffX: 0,
+                            tooltipDiffY: 10
     
                 };
-    
-                var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
-                $( '#holder' ).svg3DTagCloud( settings );
+
+                            var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+                            $( '#holder' ).svg3DTagCloud( settings );
     
             } );
-            
-        </script>            
-            </p></p>
-                
+
+                </script>
+            </div>
+            </p>
+            </p>
+
         </header>
-       
-        <!-- Nav -->         
-        <nav id="nav"> 
-            <ul> 
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
                 <li><a href="#intro" class="active">简介</a>
-                </li>                 
+                </li>
                 <li><a href="#first">资源向导</a>
-                </li>                 
+                </li>
                 <li><a href="#second">关于我们</a>
-                </li>                 
+                </li>
                 <li><a href="#cta">联系不上</a>
-                </li>                 
-            </ul>             
+                </li>
+            </ul>
         </nav>
-        
-          
-        <!-- Main -->         
-        <div id="main"> 
-            <!-- Introduction -->             
-            <!-- First Section --> 
-            
+
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Introduction -->
+            <!-- First Section -->
+
             <section id="first" class="main special">
-                <font size="10" face="Noto Serif SC" color="black">“</font>
-                    <script language="JavaScript">  //随机名言模块
-                  
-                        var a = Math.random() + ""          //产生一个随机数  
-                        var rand1 = a.charAt(5)             //的到这个数的第五个字符(实际还是从0~9的数字)  
-                        quotes = new Array              //创建消息数组  
-                        quotes[1] = "再大的事，到了明天<br/>就是故事 "               //这里分配十句随机出现的文本  
-                        quotes[2] = "我突然感到时间变的宝贵起来<br/>年华似水，而我却追赶不上<br/>我不再去空着一半座位的夜总会弹琴<br/>不再呆在屋子里写那些没人要的歌"
-                        quotes[3] = "一朵花中窥见到天国<br/>因为手中盛住了无限<br/>因此刹那便是永劫"  
-                        quotes[4] = "我们都在同样的困境之中<br/>有人自由行动，有人全副武装<br/>有的人尚未长大，就被迫开始奔跑"
-                        quotes[5] = "喜日晕者必厌阵雨，爱深海者或憎星空"  
-                        quotes[6] = "因为山在那里，所以攀上巅峰的冲动，一定会胜过对于跌入深谷的恐惧"  
-                        quotes[7] = "只有活着，才有明天<br/>只有活着，才能复仇<br/>只有活着，才有希望" 
-                        quotes[8] = '一个没有过去，逃避过去的人，一定会迷失在未来的路上'  
-                        quotes[9] = "你有没有知心的朋友<br>你贡献过什么吗<br>你对自己心安理得吗<br>你想不想做一个富有人情味的人"
-                        quotes[0] = "征服大海的没有无名之辈，风暴中坠落的全是虚弱的鸟" 
-                        var quote = quotes[rand1]   //由随机数选择一句话  
-                        //-->  
-                        </script>  
-                       <font face="Noto serif SC" size="6" color="black"> <script language="JavaScript">  
-                        <!-- Hide  
-                        document.write( quote )     //将上面选择的话写进页面  
-                        // -->  
-                        </script></font>
-                        <br/><br/><br/>
+                 <font size="10" face="Noto Serif SC" color="black">“</font>
+                <script language="JavaScript">  //随机名言模块
+
+                            var a = Math.random() + ""          //产生一个随机数
+                            var rand1 = a.charAt(5)             //的到这个数的第五个字符(实际还是从0~9的数字)
+                            quotes = new Array              //创建消息数组
+                            quotes[1] = "再大的事，到了明天<br />就是故事 "               //这里分配十句随机出现的文本
+                            quotes[2] = "我突然感到时间变的宝贵起来<br />年华似水，而我却追赶不上<br />我不再去空着一半座位的夜总会弹琴<br />不再呆在屋子里写那些没人要的歌"
+                            quotes[3] = "一朵花中窥见到天国<br />因为手中盛住了无限<br />因此刹那便是永劫"
+                            quotes[4] = "我们都在同样的困境之中<br />有人自由行动，有人全副武装<br />有的人尚未长大，就被迫开始奔跑"
+                            quotes[5] = "喜日晕者必厌阵雨，爱深海者或憎星空"
+                            quotes[6] = "因为山在那里，所以攀上巅峰的冲动，一定会胜过对于跌入深谷的恐惧"
+                            quotes[7] = "只有活着，才有明天<br />只有活着，才能复仇<br />只有活着，才有希望"
+                            quotes[8] = '一个没有过去，逃避过去的人，一定会迷失在未来的路上'
+                            quotes[9] = "你有没有知心的朋友<br>你贡献过什么吗<br>你对自己心安理得吗<br>你想不想做一个富有人情味的人"
+                                quotes[0] = "征服大海的没有无名之辈，风暴中坠落的全是虚弱的鸟"
+                                var quote = quotes[rand1]   //由随机数选择一句话
+                        //-->
+                </script>
+                <font face="Noto serif SC" size="6" color="black">
+                    <script language="JavaScript">
+                                <!-- Hide
+                                document.write( quote )     //将上面选择的话写进页面
+                        // -->
+                    </script>
+                </font>
+                <br /><br /><br />
                 <header class="major">
-                <h2>实用工具下载</h2>
+                    <h2>实用工具下载</h2>
                 </header>
-                                 <section>
-                <ul class="features"> 
-                    <li> 
-                        <img src="images\adobeduck.png" width="370"/>
-                    </li>                     
-                    <li>
-                        <img src="images\rar.png" width="400"/> 
-                    </li>                     
-                    <li> 
-                        <img src="images\msi.png" width="300"/> 
-                    </li>                     
-                </ul>
-                <h2></h2>
-                <ul class="features"> 
-                    <li> 
-                        <h3><a href="generic.html">Adobe系列软件(Ps,Pr,Ae,Au)</a></h3> 
-                        <p>Photoshop用作图片处理,Premiere用于视频编辑,Audition用于混音提取人声等</p> 
-                    </li>                     
-                    <li>
-                        <h3><a href="basic.html">电脑常备软件</a></h3> 
-                        <p>解压zip,rar等格式压缩文件,Office,浏览器,qq,微信快速定向下载</p> 
-                    </li>                     
-                    <li> 
-                        <h3><a href="generic.html">进阶管理软件资源</a></h3> 
-                        <p>大部分系统拥有较为开放的权限<br/>使用更底层的软件来达到事倍功半的效果！<br/>系统镜像站,硬盘管理映像写入,硬件测试等</p> 
-                    </li>                     
-                </ul>
-									    <ul class="features"> 
-                    <li> 
-                        <h3><a href="generic.html">Adobe系列软件(Ps,Pr,Ae,Au)</a></h3> 
-                        <p>Photoshop用作图片处理,Premiere用于视频编辑,Audition用于混音提取人声等</p> 
-                    </li>                     
-                    <li>
-                        <h3><a href="basic.html">电脑常备软件</a></h3> 
-                        <p>解压zip,rar等格式压缩文件,Office,浏览器,qq,微信快速定向下载</p> 
-                    </li>                     
-                    <li> 
-                        <h3><a href="generic.html">进阶管理软件资源</a></h3> 
-                        <p>大部分系统拥有较为开放的权限<br/>使用更底层的软件来达到事倍功半的效果！<br/>系统镜像站,硬盘管理映像写入,硬件测试等</p> 
-                    </li>                     
-                </ul>            
-                </footer>                 
-            </section>             
-            <!-- Second Section -->             
-            <section id="second" class="main special"> 
-                <header class="major"> 
-                    <h2>关于我们</h2> 
-                    
-                    <p>00后/住的地方天天过桥/大学在读，原经济学专业，已跑路💻;  <br/><br/>业余摄影/PC硬件/视频剪辑/刷机/Adobe全家桶&nbsp;</p><br/>
-                    <p>English✅/中文✅/🎮Overwatch、Apex、Minecraft总之什么都玩玩得很杂</p>
-                    <p>曾经MAD韭菜，唱歌跳舞社交乐器啥都会的小天才，现在以保持快乐为主</p>
-                    <p>梦想是养很多鸟和小动物，玩遍COD、战地全系列，去欧洲和美洲玩一玩</p>
-                    <p>目标是，改掉脾气暴躁的坏毛病，成为温和而有力，拥有丰富自我世界的人</p>
-                </header>                 
-            </footer>             
-        </section>         
-        <!-- Get Started -->         
-        <section id="cta" class="main special"> 
-            <header class="major"> 
-                <h2>我的博客</h2>
-                <p>记录之前电脑组装维修，摄影的摸索，趣事以及技术问题的解决经历</p>
-                <p>也许还有惊艳的文案记录和随笔？</p>
-            </header>             
-            <footer class="major"> 
-</footer>             
-        </section>         
-        <!-- Footer -->         
-        <footer id="footer"> 
-            <section> 
-</section>             
-            <section> 
-</section>             
-        </footer>         
-        <!-- Scripts -->         
-        <script src="assets/js/jquery.min.js"></script>         
-        <script src="assets/js/jquery.scrollex.min.js"></script>         
-        <script src="assets/js/jquery.scrolly.min.js"></script>         
-        <script src="assets/js/browser.min.js"></script>         
-        <script src="assets/js/breakpoints.min.js"></script>         
-        <script src="assets/js/util.js"></script>         
-        <script src="assets/js/main.js"></script>
-    </body>
-    
-    </html>
+                <section>
+                    <ul class="features">
+                        <li><br/>
+                            <img src="images\adobeduck.png" width="370" /><br/><br/>
+                            <h3><a href="generic.html">Adobe系列软件(Ps,Pr,Ae,Au)</a></h3>
+                            <p>Photoshop用作图片处理,Premiere用于视频编辑,Audition用于混音提取人声等</p><br/>
+                        </li>
+                        <li>
+                            <img src="images\rar.png" width="400" /><br/><br/>
+                            <h3><a href="basic.html">电脑常备软件</a></h3>
+                            <p>解压zip,rar等格式压缩文件,Office,浏览器,qq,微信快速定向下载</p>
+							<br/><br/>
+                        </li>
+                        <li>
+                            <img src="images\msi.png" width="300" /><br/><br/><br/>
+                            <h3><a href="generic.html">进阶管理软件资源</a></h3><br/>
+                            <p>大部分系统拥有较为开放的权限<br />使用更底层的软件来达到事倍功半的效果！<br />系统镜像站,硬盘管理映像写入,硬件测试等</p>
+                        </li>
+                    </ul>
+                    <h2></h2>
+
+                    <ul class="features">
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+                    </footer>
+                </section>
+                <!-- Second Section -->
+
+                <!-- Get Started -->
+                <section id="cta" class="main special">
+                    <header class="major">
+                        <h2>板块传送门</h2>
+						 <p><font size="8" face="Noto Serif SC" color="black">“</font>传送面板已部署，我们的行动会更加迅捷</p>
+						
+                        <footer class="major">
+                            <ul class="actions special">
+                                <li><a href="https://www.winrar.com.cn/download-61164scp.html" class="button">
+                                        <font face="Noto Sans SC" color="black">技术概况</font>
+                                    </a>
+                                    <a href="https://www.win-rar.com/postdownload.html?&L=0" class="button">
+                                        <font face="Noto Sans SC" color="black">部署内容</font>
+                                    </a>
+                                    <a href="https://www.winrar.com.cn/download.htm" class="button">
+                                        <font face="Noto Sans SC" color="black">技术服务</font></a>
+										 <a href="https://www.winrar.com.cn/download.htm" class="button">
+                                        <font face="Noto Sans SC" color="black">用户反馈</font></a>
+									 	
+
+                                </li>
+                            </ul>
+                        </footer>
+                    </header>
+                    <footer class="major">
+                    </footer>
+<br/><br/>
+                </section>
+                <section id="second" class="main special">
+                    <header class="major">
+                        <h2>关于我们</h2>
+
+                        <p>00后/住的地方天天过桥/大学在读，原经济学专业，已跑路💻; <br /><br />业余摄影/PC硬件/视频剪辑/刷机/Adobe全家桶&nbsp;</p><br />
+                        <p>English✅/中文✅/🎮Overwatch、Apex、Minecraft总之什么都玩玩得很杂</p>
+                        <p>曾经MAD韭菜，唱歌跳舞社交乐器啥都会的小天才，现在以保持快乐为主</p>
+                        <p>梦想是养很多鸟和小动物，玩遍COD、战地全系列，去欧洲和美洲玩一玩</p>
+                        <p>目标是，改掉脾气暴躁的坏毛病，成为温和而有力，拥有丰富自我世界的人</p>
+                    </header>
+                    </footer>
+                </section>
+                <!-- Footer -->
+                <footer id="footer">
+                    <section>
+                    </section>
+                    <section>
+                    </section>
+                </footer>
+                <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.scrollex.min.js"></script>
+                <script src="assets/js/jquery.scrolly.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+</body>
+
+</html>
