@@ -184,10 +184,13 @@ holder {
 #cta .major p {
     text-align: center;
 }
-.is-preload quote {
-    font-family: "Noto Serif SC";
-    font-size: 10px;
+section h2 displapic {
+    width: 100%;
+    height: 100%;
+    /* [disabled]line-height: middle; */
+    text-align: center;
 }
+
 
 
 
