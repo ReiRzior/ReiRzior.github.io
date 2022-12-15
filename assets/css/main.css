@@ -322,7 +322,6 @@ h6 a {
 }
 
 atitle {
-    display: block;
     overflow: hidden;
     text-shadow: rgb(32, 35, 94) 1px 1px,
     rgb(32, 35, 94)  2px 2px,
@@ -361,7 +360,8 @@ atitle {
     rgba(32, 35, 94, 0.05)  35px 35px;
     font-weight: lighter;
     font-size: 3em;
-    letter-spacing: 20px ;
+    letter-spacing: 20px;
+    max-width: 20%;
 }
 longer
 {
